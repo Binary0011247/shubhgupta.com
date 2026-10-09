@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <meta
+      name="description"
+      content="Shubh Gupta — solution consultant and principal architect. Three internships across Orbit Skilling, Myeasypharma, and Infosys SpringBoard."
+    />
+    <title>Shubh Gupta</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23111814'/%3E%3Crect x='6' y='7' width='20' height='14' rx='1' fill='none' stroke='%2339ff7a' stroke-width='2'/%3E%3Crect x='14' y='22' width='4' height='3' fill='%2339ff7a'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <div class="stage" id="desk">
+      <div class="frame" id="frame">
+        <img class="bg" id="bg" alt="" />
+
+        <div class="screen booting" id="mainScreen">
+          <div class="boot" aria-hidden="true">
+            <p class="boot-mark">GUPTA.SYS</p>
+            <p class="boot-line"><span class="boot-word">BOOTING</span><span class="dots"></span></p>
+          </div>
+          <div class="scan" aria-hidden="true"></div>
+          <section class="win" id="win" aria-label="Portfolio">
+            <header class="titlebar">
+              <span class="ticon" aria-hidden="true"></span>
+              <p class="ttitle" id="winTitle">Home — Shubh</p>
+              <span class="tcontrols" aria-hidden="true">
+                <span class="tc">_</span>
+                <span class="tc">□</span>
+                <span class="tc">×</span>
+              </span>
+            </header>
+            <nav class="menubar" id="tabbar" aria-label="Sections"></nav>
+            <div class="sectionbar">
+              <span class="seclabel" id="badge">HOME</span>
+              <div class="subtabs" id="subtabs" aria-label="Pages in this section"></div>
+              <div class="navbtns">
+                <button type="button" id="prev" aria-label="Previous page">◀</button>
+                <button type="button" id="next" aria-label="Next page">▶</button>
+              </div>
+            </div>
+            <div class="body" id="body" tabindex="0"></div>
+            <footer class="taskbar">
+              <button type="button" class="start" id="startBtn" aria-expanded="false" aria-controls="startMenu">
+                <svg class="winicon" viewBox="0 0 16 16" aria-hidden="true">
+                  <path fill="#f25022" d="M0 0h7.2v7.2H0z" />
+                  <path fill="#7fba00" d="M8.8 0H16v7.2H8.8z" />
+                  <path fill="#00a4ef" d="M0 8.8h7.2V16H0z" />
+                  <path fill="#ffb900" d="M8.8 8.8H16V16H8.8z" />
+                </svg>Start
+              </button>
+              <span class="task-pill" id="pill">Home</span>
+              <span class="task-spacer"></span>
+              <span class="tray">
+                <time class="live-clock" id="clock">--:--</time>
+                <span class="count" id="count">1/10</span>
+              </span>
+            </footer>
+            <div class="start-menu" id="startMenu" hidden>
+              <div class="start-side">Shubh Gupta</div>
+              <div class="start-items" id="startItems"></div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="themebtn" id="themeBtn" title="Change background">
+      <span class="swatch" id="themeSw"></span>
+      <span class="ttl">CHANGE THEME:</span>
+      <span class="name" id="themeLbl">Nightlife</span>
+    </button>
+
+    <button type="button" class="peek left" id="peekL" aria-label="Look left">◀</button>
+    <button type="button" class="peek right" id="peekR" aria-label="Look right">▶</button>
+
+    <div class="zoompad" aria-label="Zoom">
+      <button type="button" id="zin" aria-label="Zoom in">+</button>
+      <button type="button" id="zout" aria-label="Zoom out">−</button>
+      <div class="zpct" id="zpct">100%</div>
+      <div class="zlbl">ZOOM</div>
+    </div>
+
+    <div class="dpad" aria-label="Mobile navigation">
+      <button type="button" id="navUp" aria-label="Scroll up">▲</button>
+      <button type="button" id="navLeft" aria-label="Previous page">◀</button>
+      <button type="button" id="navRight" aria-label="Next page">▶</button>
+      <button type="button" id="navDown" aria-label="Scroll down">▼</button>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
